@@ -1,0 +1,31 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+.sidebar input{
+  width: 20%;
+  border-radius:6px;
+  padding: 9px 5px;
+  margin: 10px;
+  margin-top: 15px;
+  
+}
+
+.contact{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+}
+.contact img{
+  width: 30px;
+  padding: 10px;
+}
+ 
+.status{
+  
+}
+
