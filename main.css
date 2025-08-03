@@ -14,8 +14,9 @@
 }
 
 .contact{
+  width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content:left;
   align-items: center;
   padding: 10px;
   list-style: none;
@@ -23,9 +24,29 @@
 .contact img{
   width: 30px;
   padding: 10px;
+  border-radius: 50px;
 }
  
-.status{
-  
+.contact div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
+.statusv::before{
+  display:inline-block;
+  vertical-align: middle;
+  content: "●" ;
+  color: green;
+  font-weight: bold;  
+  padding: 5px;
+}
+.statusr::before{
+   display:inline-block;
+  vertical-align: middle;
+  content: "●" ;
+  color:red;
+  font-weight: bold;  
+  padding: 5px;
+}
