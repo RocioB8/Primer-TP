@@ -13,22 +13,23 @@ display: flex;
 
 .sidebar input{ 
   border-radius:6px;
-  padding: 9px 20px;
+  padding: 10px 20px;
   margin: 20px;
   margin-top: 15px;
   
 }
 .contact div{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 
 .contact{
    display: flex;
    align-items: center;
    gap: 10px;
-   width: 100%; 
-  padding: 10px;
+   width:100%; 
+  padding:6px;
   list-style: none;
 }
 .contact img{
@@ -61,12 +62,25 @@ display: flex;
 
 
 .chat-header{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto auto 1fr);
+  align-items: center;
   gap: 10px;
-  flex-direction: row
+  margin-top: 15px;
 
+  }
+  .chat-header h3{
+    font-weight: bold;
   }
 
 .chat-header img{
   width: 35px;
+}
+
+.chat-actions button{
+  margin-top: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
 }
