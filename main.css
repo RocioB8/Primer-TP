@@ -1,86 +1,100 @@
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
-  margin:0;
-  padding:0;
-}
-body {
-   height: 100vh;
-  width: 100%;  
-}
-section{
-display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.sidebar input{ 
-  border-radius:6px;
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
+
+.sidebar input {
+  border-radius: 6px;
   padding: 10px 20px;
   margin: 20px;
   margin-top: 15px;
-  
+
 }
-.contact div{
+
+.contact div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.contact{
-   display: flex;
-   align-items: center;
-   gap: 10px;
-   width:100%; 
-  padding:6px;
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 6px;
   list-style: none;
 }
-.contact img{
+
+.contact img {
   width: 30px;
   padding: 10px;
   border-radius: 50px;
 }
- 
+
 .statusr,
-.statusv{
+.statusv {
   color: gray;
 }
 
-.statusv::before{
-  display:inline-block;
+.statusv::before {
+  display: inline-block;
   vertical-align: middle;
-  content: "●" ;
+  content: "●";
   color: green;
-  font-weight: bold;  
+  font-weight: bold;
   padding: 5px;
 }
-.statusr::before{
-   display:inline-block;
+
+.statusr::before {
+  display: inline-block;
   vertical-align: middle;
-  content: "●" ;
-  color:red;
-  font-weight: bold;  
+  content: "●";
+  color: red;
+  font-weight: bold;
   padding: 5px;
 }
 
 
-.chat-header{
+.chat-header {
   display: grid;
   grid-template-columns: repeat(4, auto auto 1fr);
   align-items: center;
   gap: 10px;
   margin-top: 15px;
 
-  }
-  .chat-header h3{
-    font-weight: bold;
-  }
+}
 
-.chat-header img{
+.chat-header h3 {
+  font-weight: bold;
+}
+
+.chat-header img {
   width: 35px;
 }
 
-.chat-actions button{
+.chat-actions button {
   margin-top: 15px;
   border: none;
   background: none;
   cursor: pointer;
   font-size: 20px;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+  margin-top: 10px;
 }
