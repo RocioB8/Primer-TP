@@ -1,49 +1,67 @@
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 section {
-  display: flex;
-}
+  display: flex; 
+  height: 100vh;
+  /*el contenedor ocupa el 100% de la altura del navegador */
+  overflow: hidden;
+    /* ocultamos culquier contenido que se desborde, asi evito barras de desplazmaiento */
+  }
+  .sidebar{
+    
+  border-right: 1px solid grey; 
+   /*Con esto colocamos el borde vertical | para dividir el chat*/
+   background-color: aquamarine;
+   display: flex;
+   flex-direction: column;
+  }
 
 .sidebar input {
+  width: 85%;
   border-radius: 6px;
-  padding: 10px 20px;
-  margin: 20px;
-  margin-top: 15px;
-
+  padding: 10px 15px;
+  margin: 15px auto;
+  /* agregamos auto para centrar horizonrtal el contenedor */
+}
+.contact-list{
+  list-style: none;
 }
 
 .contact div {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  /* el div utilizara todo el espacio disponible*/
+  overflow: hidden;
+  /* evitamos desbordes*/
+
 }
 
 .contact {
   display: flex;
   align-items: center;
+  padding: 10px 20px; 
   gap: 10px;
-  width: 100%;
-  padding: 6px;
-  list-style: none;
+  
 }
 
 .contact img {
-  width: 30px;
-  padding: 10px;
-  border-radius: 50px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
+
 
 .statusr,
 .statusv {
+  
   color: gray;
 }
 
@@ -65,36 +83,89 @@ section {
   padding: 5px;
 }
 
-
+.header{
+  border-bottom: 1px solid gray;
+   /* colocamos borde horizontal ___ */
+   margin-bottom: auto;
+   padding: 5px;
+   
+}
 .chat-header {
   display: grid;
-  grid-template-columns: repeat(4, auto auto 1fr);
+  grid-template-columns: auto 1fr 4fr;
   align-items: center;
-  gap: 10px;
-  margin-top: 15px;
-
+  gap:10px; 
+   
 }
 
 .chat-header h3 {
   font-weight: bold;
+  
 }
 
 .chat-header img {
   width: 35px;
+  border-radius: 50%;
+  
 }
 
 .chat-actions button {
-  margin-top: 15px;
+  align-items: center;
   border: none;
   background: none;
   cursor: pointer;
   font-size: 20px;
+  padding: 10px;
 }
 
+
+
 .chat-messages {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px 10px;
-  margin-top: 10px;
+  display:grid;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  
+}
+  
+
+main{
+display: grid;
+grid-template-columns: auto ;
+background-color: aqua; 
+height: 100vh;
+flex-grow: 1;
+}
+
+
+.message-sent{
+ margin-bottom: auto; 
+ justify-self:end;
+background-color: blueviolet;
+border-radius: 10px;
+padding: 20px 30px;
+}
+
+.time{
+  color: gray;
+  font-size: 14px;
+}
+
+.message-received1{
+ margin-bottom: auto; 
+ justify-self:start;
+background-color: blueviolet;
+border-radius: 10px;
+padding: 20px 30px;
+}
+.message-received2{
+margin-bottom: auto; 
+ justify-self:start;
+background-color: rosybrown;
+border-radius: 10px;
+padding: 10px 30px;
+}
+
+.chat-footer input{
+ padding: 5px 40%;
+  
 }
