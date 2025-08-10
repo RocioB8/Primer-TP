@@ -203,3 +203,34 @@ main {
   background: none;
   cursor: pointer;
 }
+
+@media(max-width:480px){
+  .sidebar{
+    display: none;
+  }
+  main{
+    width: 100%;    
+  }
+  .header{
+    padding: 10px;
+    gap:5px;
+    font-size: 12px;
+  }
+  .chat-header{
+    gap: 5px;
+  }
+  .chat-header img{
+    width: 30px;
+    height: 30px;
+  }
+  .chat-actions{
+    gap: 5px;
+  }
+  .chat-actions button{
+    font-size: 14px;
+  }
+  .chat-messages{
+    font-size: 14px;
+  }
+  
+}
